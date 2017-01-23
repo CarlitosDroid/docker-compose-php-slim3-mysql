@@ -1,0 +1,10 @@
+CREATE TABLE USER(
+  IdUser INT(10) NOT NULL AUTO_INCREMENT,
+  Name VARCHAR(30),
+  LastName VARCHAR(30),
+  PRIMARY KEY (IdUser)
+)ENGINE=INNODB;
+
+INSERT INTO USER(Name, LastName) VALUES('Carlos Leonardo Camilo','Vargas');
+
+SELECT * FROM USER
