@@ -4,6 +4,7 @@ COPY php.ini /usr/local/etc/php/
 
 #RUN apt-get update && apt-get install git-core -y
 RUN docker-php-ext-install mysqli
+RUN a2enmod rewrite 
 
 EXPOSE 80
 
